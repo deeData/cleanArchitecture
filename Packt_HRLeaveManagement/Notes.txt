@@ -1,0 +1,8 @@
+Domain Class Library - has the Domain specific data Models
+
+Application Class Library - has DTOs and (Profile)AutoMapper, (DTOs/Validators)Data Validation for DTOs, (Persistene)Repository database methods, Features - Requests and Handlers for queries and commands using MediatR, (Exceptions) for customized throws, (Responses) response objects set properties and return after execution
+
+
+MediatR package - 
+
+Fluent Validations package- instead of using annotations, can use customized extensible validation rules accross DTOs via reuse of validations (using Include) and dependency inject repository methods if needed.
