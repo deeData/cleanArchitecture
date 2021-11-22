@@ -1,0 +1,17 @@
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Persistence.ClassLibrary\bin\Debug\net5.0\Persistence.ClassLibrary.deps.json
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Persistence.ClassLibrary\bin\Debug\net5.0\Persistence.ClassLibrary.dll
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Persistence.ClassLibrary\bin\Debug\net5.0\ref\Persistence.ClassLibrary.dll
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Persistence.ClassLibrary\bin\Debug\net5.0\Persistence.ClassLibrary.pdb
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Persistence.ClassLibrary\bin\Debug\net5.0\Application.ClassLibrary.dll
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Persistence.ClassLibrary\bin\Debug\net5.0\Domain.ClassLibrary.dll
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Persistence.ClassLibrary\bin\Debug\net5.0\Application.ClassLibrary.pdb
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Persistence.ClassLibrary\bin\Debug\net5.0\Domain.ClassLibrary.pdb
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Persistence.ClassLibrary\obj\Debug\net5.0\Persistence.ClassLibrary.csproj.AssemblyReference.cache
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Persistence.ClassLibrary\obj\Debug\net5.0\Persistence.ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Persistence.ClassLibrary\obj\Debug\net5.0\Persistence.ClassLibrary.AssemblyInfoInputs.cache
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Persistence.ClassLibrary\obj\Debug\net5.0\Persistence.ClassLibrary.AssemblyInfo.cs
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Persistence.ClassLibrary\obj\Debug\net5.0\Persistence.ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Persistence.ClassLibrary\obj\Debug\net5.0\Persistence.ClassLibrary.csproj.CopyComplete
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Persistence.ClassLibrary\obj\Debug\net5.0\Persistence.ClassLibrary.dll
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Persistence.ClassLibrary\obj\Debug\net5.0\ref\Persistence.ClassLibrary.dll
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Persistence.ClassLibrary\obj\Debug\net5.0\Persistence.ClassLibrary.pdb

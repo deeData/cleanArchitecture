@@ -9,6 +9,6 @@ namespace Application.ClassLibrary.Persistence.Contracts
 {
     public interface ILeaveTypeRepository : IGenericRepository<LeaveType>
     {
-        Task<bool> IsExists(int id);
+       
     }
 }

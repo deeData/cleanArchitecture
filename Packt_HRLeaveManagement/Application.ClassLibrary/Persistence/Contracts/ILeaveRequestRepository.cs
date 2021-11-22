@@ -10,6 +10,8 @@ namespace Application.ClassLibrary.Persistence.Contracts
     //interface is specific to type LeaveRequest
     public interface ILeaveRequestRepository : IGenericRepository<LeaveRequest>
     {
-
+        Task ChangeApprovalStatus(LeaveRequest leaveRequest, bool? ApprovalStatus);
+        Task<List<LeaveRequest>> GetLeaveRequestsWithDetails();
+        Task<LeaveRequest> GetLeaveRequestsWithDetails(int id);
     }
 }
