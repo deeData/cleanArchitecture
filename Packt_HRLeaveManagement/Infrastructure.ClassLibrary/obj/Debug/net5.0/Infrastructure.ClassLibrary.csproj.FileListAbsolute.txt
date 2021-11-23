@@ -10,3 +10,8 @@ C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Infrastruc
 C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Infrastructure.ClassLibrary\obj\Debug\net5.0\ref\Infrastructure.ClassLibrary.dll
 C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Infrastructure.ClassLibrary\obj\Debug\net5.0\Infrastructure.ClassLibrary.pdb
 C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Infrastructure.ClassLibrary\obj\Debug\net5.0\Infrastructure.ClassLibrary.csproj.AssemblyReference.cache
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Infrastructure.ClassLibrary\bin\Debug\net5.0\Application.ClassLibrary.dll
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Infrastructure.ClassLibrary\bin\Debug\net5.0\Domain.ClassLibrary.dll
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Infrastructure.ClassLibrary\bin\Debug\net5.0\Application.ClassLibrary.pdb
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Infrastructure.ClassLibrary\bin\Debug\net5.0\Domain.ClassLibrary.pdb
+C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Infrastructure.ClassLibrary\obj\Debug\net5.0\Infrastructure.ClassLibrary.csproj.CopyComplete
