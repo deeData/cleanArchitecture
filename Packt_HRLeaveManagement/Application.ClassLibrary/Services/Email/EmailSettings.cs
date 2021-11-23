@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.ClassLibrary.Services.Email
 {
-    //set in app_settings file in infrastructure
+    //set in appsettings.json file in webApi
     public class EmailSettings
     {
         public string ApiKey { get; set; }

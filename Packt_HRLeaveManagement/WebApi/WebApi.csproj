@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application.ClassLibrary\Application.ClassLibrary.csproj" />
+    <ProjectReference Include="..\Infrastructure.ClassLibrary\Infrastructure.ClassLibrary.csproj" />
+    <ProjectReference Include="..\Persistence.ClassLibrary\Persistence.ClassLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

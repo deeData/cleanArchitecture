@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.ClassLibrary
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence.ClassLibrary", "Persistence.ClassLibrary\Persistence.ClassLibrary.csproj", "{E54A9C1D-B97C-4F64-977A-3E9564225D73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{A96D43F9-C7BE-4392-9C5E-EA4468924524}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{E54A9C1D-B97C-4F64-977A-3E9564225D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E54A9C1D-B97C-4F64-977A-3E9564225D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E54A9C1D-B97C-4F64-977A-3E9564225D73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A96D43F9-C7BE-4392-9C5E-EA4468924524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A96D43F9-C7BE-4392-9C5E-EA4468924524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A96D43F9-C7BE-4392-9C5E-EA4468924524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A96D43F9-C7BE-4392-9C5E-EA4468924524}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{57C774A1-5816-43AE-9AB8-AF62FFD03C80} = {B1503588-5A8C-4CF8-9D95-3FBFF143625B}
 		{5CB0A315-A0A0-46F2-940C-5015B9519D75} = {A8287F3E-2668-4ADE-9B6B-396CCF73CB10}
 		{E54A9C1D-B97C-4F64-977A-3E9564225D73} = {A8287F3E-2668-4ADE-9B6B-396CCF73CB10}
+		{A96D43F9-C7BE-4392-9C5E-EA4468924524} = {7C4E0AFD-C52A-48A3-A214-0FB2DBEF755E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {593367BF-7109-49B8-9235-A45DC592C308}
