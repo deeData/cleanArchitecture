@@ -3,7 +3,7 @@ Domain Class Library (Only application layer should reference this project)- has
 Application Class Library - has DTOs and (Profile)AutoMapper, (DTOs/Validators)Data Validation for DTOs, (Persistene)Repository database methods, Features - Requests and Handlers for queries and commands using MediatR, (Exceptions) for customized throws, (Responses) response objects set properties and return after execution
 
 
-MediatR package - 
+MediatR package - specifies behaviors based on handlers and response. Requests can be queries or commands, these classes act like interfaces. The Request Handlers implements the Requests. Controller can focus on requests, and let MediatR do the handling (should have thin Controllers with no biz logic).
 
 Fluent Validations package- instead of using annotations, can use customized extensible validation rules accross DTOs via reuse of validations (using Include) and dependency inject repository methods if needed.
 
