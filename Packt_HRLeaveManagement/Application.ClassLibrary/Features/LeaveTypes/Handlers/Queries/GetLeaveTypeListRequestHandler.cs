@@ -15,18 +15,18 @@ namespace Application.ClassLibrary.Features.LeaveTypes.Handlers.Queries
     //to handle GetLeaveTypeRequest and return list of LeaveTypeDto
     public class GetLeaveTypeListRequestHandler : IRequestHandler<GetLeaveTypeListRequest, List<LeaveTypeDto>>
     {
-        private readonly ILeaveRequestRepository _leaveRequestRepository;
+        private readonly ILeaveTypeRepository _leaveTypeRepository;
         private readonly IMapper _mapper;
 
-        public GetLeaveTypeListRequestHandler(ILeaveRequestRepository leaveRequestRepository, IMapper mapper)
+        public GetLeaveTypeListRequestHandler(ILeaveTypeRepository leaveTypeRepository, IMapper mapper)
         {
-            _leaveRequestRepository = leaveRequestRepository;
+            _leaveTypeRepository = leaveTypeRepository;
             _mapper = mapper;
         }
         //implement MediatR's IRequestHandler
         public async Task<List<LeaveTypeDto>> Handle(GetLeaveTypeListRequest request, CancellationToken cancellationToken)
         {
-            var leaveTypes = await _leaveRequestRepository.GetAllAsync();
+            var leaveTypes = await _leaveTypeRepository.GetAllAsync();
             return _mapper.Map<List<LeaveTypeDto>>(leaveTypes);
         }
 
