@@ -18,7 +18,7 @@ namespace Persistence.ClassLibrary
         {
             services.AddDbContext<LeaveManagementDbContext>(options =>
                 options.UseSqlServer(
-                    configuration.GetConnectionString("LeaveManagementDb")));
+                    configuration.GetConnectionString("LeaveManagementDbConnection")));
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<ILeaveTypeRepository, LeaveTypeRepository>();

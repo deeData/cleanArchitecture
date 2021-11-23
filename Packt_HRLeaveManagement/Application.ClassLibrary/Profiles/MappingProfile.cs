@@ -2,6 +2,7 @@
 using Application.ClassLibrary.DTOs.LeaveRequest;
 using AutoMapper;
 using Domain.ClassLibrary;
+using Domain.ClassLibrary.Models.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

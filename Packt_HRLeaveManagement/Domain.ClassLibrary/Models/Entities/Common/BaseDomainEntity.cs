@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.ClassLibrary.Common
+
+namespace Domain.ClassLibrary.Models.Entities.Common
 {
     //properties that every domain entity will have
     //abstract class cannot be instantiated but can be inherited

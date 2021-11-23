@@ -1,4 +1,5 @@
-﻿using Domain.ClassLibrary.Common;
+﻿
+using Domain.ClassLibrary.Models.Entities.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;

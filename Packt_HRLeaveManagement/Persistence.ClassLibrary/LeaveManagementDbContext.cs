@@ -1,5 +1,5 @@
 ﻿using Domain.ClassLibrary;
-using Domain.ClassLibrary.Common;
+using Domain.ClassLibrary.Models.Entities.Common;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
