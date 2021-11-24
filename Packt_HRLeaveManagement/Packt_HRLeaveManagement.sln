@@ -17,15 +17,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{0D84A912-8855-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.ClassLibrary", "Domain.ClassLibrary\Domain.ClassLibrary.csproj", "{2DCCDA1E-50D9-4F8C-94A5-B264575FE829}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.ClassLibrary", "Application.ClassLibrary\Application.ClassLibrary.csproj", "{57C774A1-5816-43AE-9AB8-AF62FFD03C80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.ClassLibrary", "Application.ClassLibrary\Application.ClassLibrary.csproj", "{57C774A1-5816-43AE-9AB8-AF62FFD03C80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.ClassLibrary", "Infrastructure.ClassLibrary\Infrastructure.ClassLibrary.csproj", "{5CB0A315-A0A0-46F2-940C-5015B9519D75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.ClassLibrary", "Infrastructure.ClassLibrary\Infrastructure.ClassLibrary.csproj", "{5CB0A315-A0A0-46F2-940C-5015B9519D75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence.ClassLibrary", "Persistence.ClassLibrary\Persistence.ClassLibrary.csproj", "{E54A9C1D-B97C-4F64-977A-3E9564225D73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence.ClassLibrary", "Persistence.ClassLibrary\Persistence.ClassLibrary.csproj", "{E54A9C1D-B97C-4F64-977A-3E9564225D73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{A96D43F9-C7BE-4392-9C5E-EA4468924524}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{A96D43F9-C7BE-4392-9C5E-EA4468924524}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.xUnitTests", "Application.xUnitTests\Application.xUnitTests.csproj", "{9400B1EA-6B12-4FD1-8CE4-F01895034D0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.xUnitTests", "Application.xUnitTests\Application.xUnitTests.csproj", "{9400B1EA-6B12-4FD1-8CE4-F01895034D0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppMvc", "WebAppMvc\WebAppMvc.csproj", "{6DB6FA7F-3974-47E0-863F-84574C8818BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{9400B1EA-6B12-4FD1-8CE4-F01895034D0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9400B1EA-6B12-4FD1-8CE4-F01895034D0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9400B1EA-6B12-4FD1-8CE4-F01895034D0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DB6FA7F-3974-47E0-863F-84574C8818BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DB6FA7F-3974-47E0-863F-84574C8818BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DB6FA7F-3974-47E0-863F-84574C8818BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DB6FA7F-3974-47E0-863F-84574C8818BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +78,7 @@ Global
 		{E54A9C1D-B97C-4F64-977A-3E9564225D73} = {A8287F3E-2668-4ADE-9B6B-396CCF73CB10}
 		{A96D43F9-C7BE-4392-9C5E-EA4468924524} = {7C4E0AFD-C52A-48A3-A214-0FB2DBEF755E}
 		{9400B1EA-6B12-4FD1-8CE4-F01895034D0E} = {13DFF965-4D5C-44BB-9DD6-4D25CE413AA6}
+		{6DB6FA7F-3974-47E0-863F-84574C8818BC} = {0D84A912-8855-4E37-A392-6DABCA4DFBF3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {593367BF-7109-49B8-9235-A45DC592C308}
