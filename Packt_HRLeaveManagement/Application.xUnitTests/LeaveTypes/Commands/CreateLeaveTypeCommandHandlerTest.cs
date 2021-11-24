@@ -23,6 +23,7 @@ namespace Application.xUnitTests.LeaveTypes.Commands
         private readonly IMapper _mapper;
         private readonly Mock<ILeaveTypeRepository> _mockRepo;
         private readonly LeaveTypeDto _leaveTypeDto;
+        private readonly CreateLeaveTypeCommandHandler _handler;
         public CreateLeaveTypeCommandHandlerTest()
         {
             _mockRepo = MockLeaveTypeRepository.GetLeaveTypeRepository();
@@ -33,7 +34,7 @@ namespace Application.xUnitTests.LeaveTypes.Commands
             });
 
             _mapper = mapperConfig.CreateMapper();
-
+            _handler = new CreateLeaveTypeCommandHandler(_mockRepo.Object, _mapper);
             _leaveTypeDto = new LeaveTypeDto
             {
                 DefaultDays = 15,
@@ -45,9 +46,7 @@ namespace Application.xUnitTests.LeaveTypes.Commands
         [Fact]
         public async Task Valid_LeaveType_Added() 
         {
-            var handler = new CreateLeaveTypeCommandHandler(_mockRepo.Object, _mapper);
-
-            var result = await handler.Handle(new CreateLeaveTypeCommand() { LeaveTypeDto = _leaveTypeDto }, CancellationToken.None);
+            var result = await _handler.Handle(new CreateLeaveTypeCommand() { LeaveTypeDto = _leaveTypeDto }, CancellationToken.None);
             var leaveTypes = await _mockRepo.Object.GetAllAsync();
             result.ShouldBeOfType<int>();
             leaveTypes.Count.ShouldBe(3);
@@ -56,14 +55,12 @@ namespace Application.xUnitTests.LeaveTypes.Commands
         [Fact]
         public async Task Invalid_LeaveType_Added()
         {
-            var handler = new CreateLeaveTypeCommandHandler(_mockRepo.Object, _mapper);
-
             //replace default days value
             _leaveTypeDto.DefaultDays = -1;
 
             ValidationException ex = await Should.ThrowAsync<ValidationException>
                 ( async () =>
-                    await handler.Handle(new CreateLeaveTypeCommand() { LeaveTypeDto = _leaveTypeDto}, CancellationToken.None)
+                    await _handler.Handle(new CreateLeaveTypeCommand() { LeaveTypeDto = _leaveTypeDto}, CancellationToken.None)
                 );
 
             var leaveTypes = await _mockRepo.Object.GetAllAsync();
