@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.ClassLibrary.Responses
 {
-    class BaseCommandRepoonse
+    public class BaseCommandRepoonse
     {
         public int Id { get; set; }
         public bool Success { get; set; } = true;

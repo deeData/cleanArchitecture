@@ -9,4 +9,3 @@ C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Domain.Cla
 C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Domain.ClassLibrary\obj\Debug\net5.0\Domain.ClassLibrary.dll
 C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Domain.ClassLibrary\obj\Debug\net5.0\ref\Domain.ClassLibrary.dll
 C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Domain.ClassLibrary\obj\Debug\net5.0\Domain.ClassLibrary.pdb
-C:\Users\deidr\source\repos\CleanArchitecture\Packt_HRLeaveManagement\Domain.ClassLibrary\obj\Debug\net5.0\Domain.ClassLibrary.csproj.AssemblyReference.cache

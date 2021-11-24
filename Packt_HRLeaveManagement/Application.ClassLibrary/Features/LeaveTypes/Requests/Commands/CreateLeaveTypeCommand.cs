@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Application.ClassLibrary.Features.LeaveTypes.Requests.Commands
 {
     //return id after LeaveType is created
-    public class CreateLeaveTypeCommand : IRequest<BaseCommandRepoonse>
+    public class CreateLeaveTypeCommand : IRequest<int>
     {
         //consumer will send over from request
         public LeaveTypeDto LeaveTypeDto { get; set; }
