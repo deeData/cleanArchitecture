@@ -7,7 +7,11 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using WebAppMvc.Contracts;
+using WebAppMvc.Services;
+using WebAppMvc.Services.Base;
 
 namespace WebAppMvc
 {
@@ -23,8 +27,18 @@ namespace WebAppMvc
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //wire up NSwag client
+            services.AddHttpClient<IClient, Client>(cl => cl.BaseAddress = new Uri("https://localhost:44326"));
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            //services.AddScoped<ILeaveTypeService, LeaveTypeService>();
+            //only need one local storage per user
+            services.AddSingleton<ILocalStorageService, LocalStorageService>();
+
             services.AddControllersWithViews();
         }
+
+
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
