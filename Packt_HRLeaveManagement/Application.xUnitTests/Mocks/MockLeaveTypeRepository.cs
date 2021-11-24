@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace Application.xUnitTests.Mocks
 {
+    //setting up a mock repository for testing
     public static class MockLeaveTypeRepository
     {
         //decorated with keyword Mock will mock the repository

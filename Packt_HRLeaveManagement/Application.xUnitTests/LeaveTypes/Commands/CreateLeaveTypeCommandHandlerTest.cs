@@ -47,8 +47,9 @@ namespace Application.xUnitTests.LeaveTypes.Commands
         public async Task Valid_LeaveType_Added() 
         {
             var result = await _handler.Handle(new CreateLeaveTypeCommand() { LeaveTypeDto = _leaveTypeDto }, CancellationToken.None);
-            var leaveTypes = await _mockRepo.Object.GetAllAsync();
             result.ShouldBeOfType<int>();
+
+            var leaveTypes = await _mockRepo.Object.GetAllAsync();
             leaveTypes.Count.ShouldBe(3);
         }
 
@@ -65,6 +66,7 @@ namespace Application.xUnitTests.LeaveTypes.Commands
 
             var leaveTypes = await _mockRepo.Object.GetAllAsync();
             leaveTypes.Count.ShouldBe(2);
+            ex.ShouldNotBeNull();
         }
 
     }
