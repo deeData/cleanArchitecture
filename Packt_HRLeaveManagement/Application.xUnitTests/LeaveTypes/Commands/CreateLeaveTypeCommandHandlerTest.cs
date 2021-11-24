@@ -1,4 +1,5 @@
 ﻿using Application.ClassLibrary.DTOs;
+using Application.ClassLibrary.Exceptions;
 using Application.ClassLibrary.Features.LeaveTypes.Handlers.Commands;
 using Application.ClassLibrary.Features.LeaveTypes.Requests.Commands;
 using Application.ClassLibrary.Persistence.Contracts;
@@ -50,6 +51,23 @@ namespace Application.xUnitTests.LeaveTypes.Commands
             var leaveTypes = await _mockRepo.Object.GetAllAsync();
             result.ShouldBeOfType<int>();
             leaveTypes.Count.ShouldBe(3);
+        }
+
+        [Fact]
+        public async Task Invalid_LeaveType_Added()
+        {
+            var handler = new CreateLeaveTypeCommandHandler(_mockRepo.Object, _mapper);
+
+            //replace default days value
+            _leaveTypeDto.DefaultDays = -1;
+
+            ValidationException ex = await Should.ThrowAsync<ValidationException>
+                ( async () =>
+                    await handler.Handle(new CreateLeaveTypeCommand() { LeaveTypeDto = _leaveTypeDto}, CancellationToken.None)
+                );
+
+            var leaveTypes = await _mockRepo.Object.GetAllAsync();
+            leaveTypes.Count.ShouldBe(2);
         }
 
     }
