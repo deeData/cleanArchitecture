@@ -4,6 +4,7 @@ using Application.ClassLibrary.Features.LeaveTypes.Handlers.Commands;
 using Application.ClassLibrary.Features.LeaveTypes.Requests.Commands;
 using Application.ClassLibrary.Persistence.Contracts;
 using Application.ClassLibrary.Profiles;
+using Application.ClassLibrary.Responses;
 using Application.xUnitTests.Mocks;
 using AutoMapper;
 using Moq;
@@ -47,7 +48,7 @@ namespace Application.xUnitTests.LeaveTypes.Commands
         public async Task Valid_LeaveType_Added() 
         {
             var result = await _handler.Handle(new CreateLeaveTypeCommand() { LeaveTypeDto = _leaveTypeDto }, CancellationToken.None);
-            result.ShouldBeOfType<int>();
+            result.ShouldBeOfType<BaseCommandRepoonse>();
 
             var leaveTypes = await _mockRepo.Object.GetAllAsync();
             leaveTypes.Count.ShouldBe(3);
@@ -59,14 +60,18 @@ namespace Application.xUnitTests.LeaveTypes.Commands
             //replace default days value
             _leaveTypeDto.DefaultDays = -1;
 
-            ValidationException ex = await Should.ThrowAsync<ValidationException>
-                ( async () =>
-                    await _handler.Handle(new CreateLeaveTypeCommand() { LeaveTypeDto = _leaveTypeDto}, CancellationToken.None)
-                );
+            //ValidationException ex = await Should.ThrowAsync<ValidationException>
+            //    ( async () =>
+            //        await _handler.Handle(new CreateLeaveTypeCommand() { LeaveTypeDto = _leaveTypeDto}, CancellationToken.None)
+            //    );
+
+            var result = await _handler.Handle(new CreateLeaveTypeCommand() { LeaveTypeDto = _leaveTypeDto}, CancellationToken.None);
 
             var leaveTypes = await _mockRepo.Object.GetAllAsync();
+            
             leaveTypes.Count.ShouldBe(2);
-            ex.ShouldNotBeNull();
+            //ex.ShouldNotBeNull();
+            result.ShouldBeOfType<BaseCommandRepoonse>();
         }
 
     }
