@@ -8,5 +8,7 @@ namespace WebAppMvc.Contracts
     //LeaveType endpoint
     public interface ILeaveTypeService
     {
+
     }
+
 }
