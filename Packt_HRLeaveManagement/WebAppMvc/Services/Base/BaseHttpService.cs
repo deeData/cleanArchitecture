@@ -10,7 +10,7 @@ namespace WebAppMvc.Services.Base
     //every service to be able to do
     public class BaseHttpService
     {
-        private readonly IClient _client;
+        public readonly IClient _client;
         private readonly ILocalStorageService _localStorage;
 
         public BaseHttpService(IClient client, ILocalStorageService localStorageService)

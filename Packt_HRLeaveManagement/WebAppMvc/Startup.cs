@@ -30,7 +30,7 @@ namespace WebAppMvc
             //wire up NSwag client
             services.AddHttpClient<IClient, Client>(cl => cl.BaseAddress = new Uri("https://localhost:44326"));
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
-            //services.AddScoped<ILeaveTypeService, LeaveTypeService>();
+            services.AddScoped<ILeaveTypeService, LeaveTypeService>();
             //only need one local storage per user
             services.AddSingleton<ILocalStorageService, LocalStorageService>();
 
